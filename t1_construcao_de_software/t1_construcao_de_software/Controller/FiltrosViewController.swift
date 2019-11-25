@@ -2,6 +2,8 @@
 //  FiltrosViewController.swift
 //  t1_construcao_de_software
 //
+// Classe que realiza o filtro de todos os cursos disponiveis que apareceram na lista
+//
 //  Created by Fernando Locatelli Maioli on 30/09/19.
 //  Copyright © 2019 Fernando Locatelli Maioli. All rights reserved.
 //
@@ -51,7 +53,6 @@ class FiltrosViewController: UIViewController {
         let viewController = segue.destination as? AdministradorViewController
         let lista = sender as? [Curso]
         viewController?.listaTodosCursos = lista
-        
     }
     
     @IBAction func filterButtonAction(_ sender: UIButton) {

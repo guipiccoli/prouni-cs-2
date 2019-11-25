@@ -2,9 +2,13 @@
 //  AdministradorViewController.swift
 //  t1_construcao_de_software
 //
+// Tela do administrador com uma lista de cursos que podera editar, excluir ou adicionar um novo curso
+//
 //  Created by Guilherme Piccoli on 18/11/19.
 //  Copyright © 2019 Fernando Locatelli Maioli. All rights reserved.
 //
+
+
 
 import UIKit
 

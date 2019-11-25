@@ -2,6 +2,8 @@
 //  Curso.swift
 //  t1_construcao_de_software
 //
+// Modelo do curso
+//
 //  Created by Fernando Locatelli Maioli on 02/10/19.
 //  Copyright © 2019 Fernando Locatelli Maioli. All rights reserved.
 //

@@ -10,6 +10,7 @@ import Foundation
 
 struct DataAccess {
     
+    //Retorna a lista de cursos a partir dos filtros
     static func getListaDeCursos(nota: Double, uf_busca:String, cidade_busca:String, universidade_nome: String, nome: String, somente_cota: String, somente_integral: String, completionHandler completion: @escaping ([Curso]?) -> Void) {
         
         let json: [String: String] = [
@@ -50,6 +51,7 @@ struct DataAccess {
         dataTask.resume()
     }
     
+    //Administrador adiciona novo curso com todas informacoes
     static func addNovoCurso(uf_busca:String, cidade_busca:String, universidade_nome: String, nome: String, campus_nome: String, grau: String, turno: String, mensalidade: String, notaIntegralAmpla: String, notaIntegralCotas: String, bolsa_integral_ampla: String, bolsa_integral_cotas: String, bolsa_parcial_cotas: String, bolsa_parcial_ampla: String, nota_parcial_ampla: String, nota_parcial_cotas: String, completionHandler completion: @escaping (Bool) -> Void) {
         
 
@@ -94,6 +96,7 @@ struct DataAccess {
         dataTask.resume()
     }
     
+    //Administrador deleta um curso ja existente
     static func deleteCurso(uf_busca:String, cidade_busca:String, universidade_nome: String, nome: String, campus_nome: String, grau: String, turno: String, mensalidade: String, notaIntegralAmpla: String, notaIntegralCotas: String, bolsa_integral_ampla: String, bolsa_integral_cotas: String, bolsa_parcial_cotas: String, bolsa_parcial_ampla: String, nota_parcial_ampla: String, nota_parcial_cotas: String, completionHandler completion: @escaping (Bool) -> Void) {
            
 
@@ -141,6 +144,7 @@ struct DataAccess {
            dataTask.resume()
        }
     
+    //Retorna a lista de favoritos do usuario
     static func getListarFavoritos(completionHandler completion: @escaping ([Curso]?) -> Void) {
         
         
@@ -164,7 +168,7 @@ struct DataAccess {
         dataTask.resume()
     }
     
-    
+    //Usuario pode favoritar um curso
     static func favoritarCurso(uf_busca:String, cidade_busca:String, universidade_nome: String, nome: String, campus_nome: String, grau: String, turno: String, mensalidade: String, notaIntegralAmpla: String, notaIntegralCotas: String, bolsa_integral_ampla: String, bolsa_integral_cotas: String, bolsa_parcial_cotas: String, bolsa_parcial_ampla: String, nota_parcial_ampla: String, nota_parcial_cotas: String, completionHandler completion: @escaping (Bool) -> Void) {
         
 

@@ -2,6 +2,8 @@
 //  EditDetailViewController.swift
 //  t1_construcao_de_software
 //
+// Classe com os detalhes de um curso para serem editados pelo administrador.
+//
 //  Created by Guilherme Piccoli on 18/11/19.
 //  Copyright © 2019 Fernando Locatelli Maioli. All rights reserved.
 //
