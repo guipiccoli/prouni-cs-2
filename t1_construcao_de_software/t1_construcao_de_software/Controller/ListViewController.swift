@@ -12,7 +12,7 @@ class ListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var listaCursos: [Curso]?
-    
+    var isFavoriteList: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +46,8 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.cotaNotaLabel.text = "C: \(curso.nota_integral_cotas ?? 0.0)"
         cell.amploNotaLabel.text = "A: \(curso.nota_integral_ampla ?? 0.0)"
         
+
+        
         return cell
     }
     
@@ -67,6 +69,8 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         viewController?.notaIntegralAmplaText = "Nota Integral/Parcial Ampla: \(curso.nota_integral_ampla ?? 0.0) / \(curso.nota_parcial_ampla ?? 0.0)"
         viewController?.notaIntegralCotaText = "Nota Integral/Parcial Cota: \(curso.nota_integral_cotas ?? 0.0) / \(curso.nota_parcial_cotas ?? 0.0)"
         viewController?.curso = curso
+        
+        viewController?.isFavorite = isFavoriteList
     }
     
     

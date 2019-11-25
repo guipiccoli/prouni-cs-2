@@ -176,6 +176,7 @@
                     <navigationItem key="navigationItem" id="gCG-sN-YLl"/>
                     <connections>
                         <outlet property="cursoTextField" destination="Z87-PX-wzl" id="zVr-5j-ggM"/>
+                        <outlet property="favoriteButtonOutlet" destination="163-m5-PUp" id="9HU-j9-Qtc"/>
                         <outlet property="scrollView" destination="nL8-mb-ooN" id="KR4-48-7ph"/>
                         <segue destination="Mde-uV-t4c" kind="show" identifier="Lista" id="bVP-c4-rSB"/>
                     </connections>
@@ -327,7 +328,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35G-Vx-uF4">
-                                        <rect key="frame" x="127" y="297" width="152" height="51"/>
+                                        <rect key="frame" x="127" y="297" width="152.5" height="51"/>
                                         <color key="backgroundColor" red="0.20392156859999999" green="0.60331691099999996" blue="0.4570520871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Filtrar">
@@ -874,6 +875,7 @@
                     <connections>
                         <outlet property="campusLabel" destination="sFP-J6-dL0" id="3QQ-oE-kZv"/>
                         <outlet property="cityLabel" destination="4N1-vY-jL7" id="7io-Aj-G8u"/>
+                        <outlet property="favoriteButtonOutlet" destination="jRQ-6W-QGH" id="SRn-GT-0eJ"/>
                         <outlet property="monthlyPriceLabel" destination="mkp-r7-b1l" id="W0R-xZ-ACZ"/>
                         <outlet property="nameLabel" destination="eeL-R7-hXI" id="7rt-pX-EbC"/>
                         <outlet property="notaIntegralAmplaLabel" destination="JoQ-ik-Gr6" id="wdX-um-Yjf"/>

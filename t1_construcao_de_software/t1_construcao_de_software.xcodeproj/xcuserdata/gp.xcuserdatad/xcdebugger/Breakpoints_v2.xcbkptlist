@@ -30,8 +30,8 @@
             filePath = "t1_construcao_de_software/Controller/CursoViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "navegarButton(_:)"
             landmarkType = "7">
             <Locations>
@@ -78,8 +78,8 @@
             filePath = "t1_construcao_de_software/Controller/CursoViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "navegarButton(_:)"
             landmarkType = "7">
             <Locations>
@@ -112,6 +112,86 @@
                   startingLineNumber = "52"
                   endingLineNumber = "52"
                   offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D10DB197-3B85-49FF-9866-59B70AF9F050"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "t1_construcao_de_software/Controller/ListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75B293D3-28E8-44E8-BC12-C73A5EE8009F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "t1_construcao_de_software/Controller/CursoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D52FF2BB-37A8-4AE4-9B87-537949FA1776"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "t1_construcao_de_software/Controller/CursoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "favoritosListButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D52FF2BB-37A8-4AE4-9B87-537949FA1776 - d6c7eda1ac19c26e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "t1_construcao_de_software.CursoViewController.favoritosListButton(Any) -&gt; ()"
+                  moduleName = "t1_construcao_de_software"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gp/Desktop/Faculdade/Construcao%20de%20Software/prouni-cs-front2/t1_construcao_de_software/t1_construcao_de_software/Controller/CursoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "659">
+               </Location>
+               <Location
+                  uuid = "D52FF2BB-37A8-4AE4-9B87-537949FA1776 - 2a53c22d37330323"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;t1_construcao_de_software.Curso&gt;&gt;) -&gt; () in t1_construcao_de_software.CursoViewController.favoritosListButton(Any) -&gt; ()"
+                  moduleName = "t1_construcao_de_software"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gp/Desktop/Faculdade/Construcao%20de%20Software/prouni-cs-front2/t1_construcao_de_software/t1_construcao_de_software/Controller/CursoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "158">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -15,6 +15,9 @@ class CursoViewController: UIViewController {
     @IBOutlet weak var cursoTextField: UITextField!
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var favoriteButtonOutlet: UIButton!
+    
+    var isFavorite: Bool = false
     
     
     override func viewDidLoad() {
@@ -43,6 +46,7 @@ class CursoViewController: UIViewController {
     
     @IBAction func navegarButton(_ sender: UIButton) {
         guard let cursoNome = cursoTextField.text else { return }
+        isFavorite = false
         if !cursoNome.isEmpty {
             loading!.startAnimating()
             view?.bringSubviewToFront(loading!)
@@ -61,6 +65,7 @@ class CursoViewController: UIViewController {
         let viewController = segue.destination as? ListViewController
         let lista = sender as? [Curso]
         viewController?.listaCursos = lista
+        viewController?.isFavoriteList = isFavorite
     }
     
     
@@ -68,9 +73,9 @@ class CursoViewController: UIViewController {
         
         loading!.startAnimating()
         view?.bringSubviewToFront(loading!)
-        
         DataAccess.getListarFavoritos { (listaCursos) in
             DispatchQueue.main.async {
+                self.isFavorite = true
                 self.loading?.stopAnimating()
                 self.performSegue(withIdentifier: "Lista", sender: listaCursos)
             }

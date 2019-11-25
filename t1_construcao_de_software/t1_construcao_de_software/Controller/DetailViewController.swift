@@ -20,6 +20,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var notaIntegralCotaLabel: UILabel!
     @IBOutlet weak var notaIntegralAmplaLabel: UILabel!
     
+    @IBOutlet weak var favoriteButtonOutlet: UIButton!
+    
+    
     var nameLabelText: String!
     var scoreLabelText: String!
     var universityLabelText: String!
@@ -30,6 +33,8 @@ class DetailViewController: UIViewController {
     var cityLabelText: String!
     var notaIntegralCotaText: String!
     var notaIntegralAmplaText: String!
+    
+    var isFavorite: Bool!
     
     var curso: Curso!
     
@@ -48,6 +53,13 @@ class DetailViewController: UIViewController {
         notaIntegralCotaLabel.text = notaIntegralCotaText
         notaIntegralAmplaLabel.text = notaIntegralAmplaText
 
+        
+        if isFavorite {
+            favoriteButtonOutlet.isHidden = true
+        }
+        else {
+            favoriteButtonOutlet.isHidden = false
+        }
     }
     
     
