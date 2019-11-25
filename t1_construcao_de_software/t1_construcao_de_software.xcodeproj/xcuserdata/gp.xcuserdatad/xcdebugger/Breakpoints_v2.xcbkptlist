@@ -23,17 +23,97 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9BB5D8AC-FDD3-4CBA-8A98-85B9770C9E5C"
+            uuid = "37F8F158-53D8-4AE6-953E-92F0FAE8A4C7"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "t1_construcao_de_software/Service/DataAccess.swift"
+            filePath = "t1_construcao_de_software/Controller/CursoViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "addNovoCurso(isCreating:uf_busca:cidade_busca:universidade_nome:nome:campus_nome:grau:turno:mensalidade:notaIntegralAmpla:notaIntegralCotas:bolsa_integral_ampla:bolsa_integral_cotas:bolsa_parcial_cotas:bolsa_parcial_ampla:nota_parcial_ampla:nota_parcial_cotas:completionHandler:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "navegarButton(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "37F8F158-53D8-4AE6-953E-92F0FAE8A4C7 - f8dc6e7b168a5bd9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "t1_construcao_de_software.CursoViewController.navegarButton(__C.UIButton) -&gt; ()"
+                  moduleName = "t1_construcao_de_software"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gp/Desktop/Faculdade/Construcao%20de%20Software/prouni-cs-front2/t1_construcao_de_software/t1_construcao_de_software/Controller/CursoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1223">
+               </Location>
+               <Location
+                  uuid = "37F8F158-53D8-4AE6-953E-92F0FAE8A4C7 - f0cdfd0e777a6513"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;t1_construcao_de_software.Curso&gt;&gt;) -&gt; () in t1_construcao_de_software.CursoViewController.navegarButton(__C.UIButton) -&gt; ()"
+                  moduleName = "t1_construcao_de_software"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gp/Desktop/Faculdade/Construcao%20de%20Software/prouni-cs-front2/t1_construcao_de_software/t1_construcao_de_software/Controller/CursoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "158">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8B65E92-B760-40BB-AB33-79B4EDB38E54"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "t1_construcao_de_software/Controller/CursoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "navegarButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B8B65E92-B760-40BB-AB33-79B4EDB38E54 - f0cdfd0e777a6513"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;t1_construcao_de_software.Curso&gt;&gt;) -&gt; () in t1_construcao_de_software.CursoViewController.navegarButton(__C.UIButton) -&gt; ()"
+                  moduleName = "t1_construcao_de_software"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gp/Desktop/Faculdade/Construcao%20de%20Software/prouni-cs-front2/t1_construcao_de_software/t1_construcao_de_software/Controller/CursoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "158">
+               </Location>
+               <Location
+                  uuid = "B8B65E92-B760-40BB-AB33-79B4EDB38E54 - 561b843b071788da"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;t1_construcao_de_software.Curso&gt;&gt;) -&gt; () in t1_construcao_de_software.CursoViewController.navegarButton(__C.UIButton) -&gt; ()"
+                  moduleName = "t1_construcao_de_software"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gp/Desktop/Faculdade/Construcao%20de%20Software/prouni-cs-front2/t1_construcao_de_software/t1_construcao_de_software/Controller/CursoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

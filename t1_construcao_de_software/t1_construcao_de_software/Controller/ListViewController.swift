@@ -66,6 +66,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         viewController?.cityLabelText = curso.cidade_busca
         viewController?.notaIntegralAmplaText = "Nota Integral/Parcial Ampla: \(curso.nota_integral_ampla ?? 0.0) / \(curso.nota_parcial_ampla ?? 0.0)"
         viewController?.notaIntegralCotaText = "Nota Integral/Parcial Cota: \(curso.nota_integral_cotas ?? 0.0) / \(curso.nota_parcial_cotas ?? 0.0)"
+        viewController?.curso = curso
     }
     
     

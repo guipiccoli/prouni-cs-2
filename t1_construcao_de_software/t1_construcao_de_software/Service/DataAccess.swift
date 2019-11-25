@@ -22,6 +22,7 @@ struct DataAccess {
             "somente_integral": somente_integral
         ]
         
+        
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
         // create post request
@@ -73,7 +74,6 @@ struct DataAccess {
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
     
-        print(json)
         let request = NSMutableURLRequest(url: NSURL(string: "https://t2construcaodesoftwareapirela.herokuapp.com/curso")! as URL,
                                                 cachePolicy: .useProtocolCachePolicy,
                                             timeoutInterval: 10.0)
@@ -87,8 +87,6 @@ struct DataAccess {
           if (error != nil) {
             print(error)
           } else {
-            let httpResponse = response as? HTTPURLResponse
-            print(httpResponse)
             completion(true)
           }
         })
@@ -143,13 +141,11 @@ struct DataAccess {
            dataTask.resume()
        }
     
-    
-    
-    static func getListarTodosCursos(completionHandler completion: @escaping ([Curso]?) -> Void) {
+    static func getListarFavoritos(completionHandler completion: @escaping ([Curso]?) -> Void) {
         
         
         // create get request
-        let url = URL(string: "https://t2construcaodesoftwareapirela.herokuapp.com/")!
+        let url = URL(string: "https://t2construcaodesoftwareapirela.herokuapp.com/favorito")!
         let request = URLRequest(url: url)
         
         //create session
@@ -165,6 +161,51 @@ struct DataAccess {
             completion(nil)
             return
         })
+        dataTask.resume()
+    }
+    
+    
+    static func favoritarCurso(uf_busca:String, cidade_busca:String, universidade_nome: String, nome: String, campus_nome: String, grau: String, turno: String, mensalidade: String, notaIntegralAmpla: String, notaIntegralCotas: String, bolsa_integral_ampla: String, bolsa_integral_cotas: String, bolsa_parcial_cotas: String, bolsa_parcial_ampla: String, nota_parcial_ampla: String, nota_parcial_cotas: String, completionHandler completion: @escaping (Bool) -> Void) {
+        
+
+        let json: [String: String] = [
+            "uf_busca": uf_busca,
+            "cidade_busca": cidade_busca,
+            "universidade_nome": universidade_nome,
+            "campus_nome": campus_nome,
+            "nome": nome,
+            "grau": grau,
+            "turno": turno,
+            "mensalidade": mensalidade,
+            "bolsa_integral_cotas": bolsa_integral_cotas,
+            "bolsa_integral_ampla": bolsa_integral_ampla,
+            "bolsa_parcial_cotas": bolsa_parcial_cotas,
+            "bolsa_parcial_ampla": bolsa_parcial_ampla,
+            "nota_integral_ampla": notaIntegralAmpla,
+            "nota_integral_cotas": notaIntegralCotas,
+            "nota_parcial_ampla": nota_parcial_ampla,
+            "nota_parcial_cotas": nota_parcial_cotas
+        ]
+        
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+    
+        let request = NSMutableURLRequest(url: NSURL(string: "https://t2construcaodesoftwareapirela.herokuapp.com/favorito")! as URL,
+                                                cachePolicy: .useProtocolCachePolicy,
+                                            timeoutInterval: 10.0)
+        request.httpMethod = "POST"
+        request.httpBody = (jsonData as! Data)
+        request.setValue("application/json; charset=utf-8", forHTTPHeaderField:"Content-Type")
+
+
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+          if (error != nil) {
+            print(error)
+          } else {
+            completion(true)
+          }
+        })
+
         dataTask.resume()
     }
 }

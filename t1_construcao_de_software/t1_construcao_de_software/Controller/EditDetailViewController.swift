@@ -40,14 +40,14 @@ class EditDetailViewController: UIViewController {
         
         print(isCreating)
         
-        nomeTextField.text = nameText ?? ""
-        grauTextField.text = grauText ?? ""
-        universidadeTextField.text = universityText ?? ""
-        campusTextField.text = campusText ?? ""
-        cidadeTextField.text = cityText ?? ""
-        mensalidadeTextField.text = monthlyPriceText ?? ""
-        notaIntegralCota.text = notaCota ?? ""
-        notaIntegralAmpla.text = notaAmpla ?? ""
+//        nomeTextField.text = nameText ?? ""
+//        grauTextField.text = grauText ?? ""
+//        universidadeTextField.text = universityText ?? ""
+//        campusTextField.text = campusText ?? ""
+//        cidadeTextField.text = cityText ?? ""
+//        mensalidadeTextField.text = monthlyPriceText ?? ""
+//        notaIntegralCota.text = notaCota ?? ""
+//        notaIntegralAmpla.text = notaAmpla ?? ""
 
         
         nomeTextField.delegate = self

@@ -8,15 +8,24 @@
 
 import UIKit
 
-class NotaViewController: UIViewController {
-
-    @IBOutlet weak var notaTextField: UITextField!
+class CursoViewController: UIViewController {
+    
+    var loading: UIActivityIndicatorView?
+    
+    @IBOutlet weak var cursoTextField: UITextField!
     
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        notaTextField.delegate = self
-
+        
+        loading = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        loading?.backgroundColor = .lightGray
+        loading?.color = .black
+        self.view.addSubview(loading!)
+        
+        
         self.hideKeyboardWhenTappedAround()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
@@ -31,30 +40,46 @@ class NotaViewController: UIViewController {
     @objc func keyboardWillHide(notification: NSNotification){
         scrollView.contentInset.bottom = 0
     }
-
+    
     @IBAction func navegarButton(_ sender: UIButton) {
-        guard let nota = notaTextField.text else { return }
-        if !nota.isEmpty {
-            self.performSegue(withIdentifier: "Filtros", sender: nota)
+        guard let cursoNome = cursoTextField.text else { return }
+        if !cursoNome.isEmpty {
+            loading!.startAnimating()
+            view?.bringSubviewToFront(loading!)
+            
+            DataAccess.getListaDeCursos(nota: 1000, uf_busca: "RS", cidade_busca: "Porto Alegre", universidade_nome: "PUCRS", nome: cursoNome, somente_cota: "", somente_integral: "") { (listaCursos) in
+            
+                DispatchQueue.main.async {
+                    self.loading?.stopAnimating()
+                    self.performSegue(withIdentifier: "Lista", sender: listaCursos)
+                }
+            }
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let viewController = segue.destination as? FiltrosViewController
-        guard let nota = sender as? String else { return }
-        let notaNumber = Double.init(nota)
-        viewController?.notaUsuario = notaNumber
+        let viewController = segue.destination as? ListViewController
+        let lista = sender as? [Curso]
+        viewController?.listaCursos = lista
     }
-}
-
-//MARK: - Text Field
-extension NotaViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if (string >= "0" && string <= "9") || string.isEmpty {
-            return true
+    
+    
+    @IBAction func favoritosListButton(_ sender: Any) {
+        
+        loading!.startAnimating()
+        view?.bringSubviewToFront(loading!)
+        
+        DataAccess.getListarFavoritos { (listaCursos) in
+            DispatchQueue.main.async {
+                self.loading?.stopAnimating()
+                self.performSegue(withIdentifier: "Lista", sender: listaCursos)
+            }
         }
-        return false
+        
     }
+    
+
+    
 }
 
 //MARK: - Hide Keyboard
