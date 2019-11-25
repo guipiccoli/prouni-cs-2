@@ -9,10 +9,10 @@ Aplicação iOS, para listar cursos e faculdades disponíveis no PROUNI na PUCRS
 
 Também poderá favoritar um curso, e visualiza-lo na lista de favoritos da aplicação.
 
-### Administrador
-
-O adminstrador pode adicionar um novo curso, editar um curso já existente e excluir um curso.
-
+ ### Administrador
+ 
+ O administrador pode inserir um novo curso, deletar ou editar um curso já existente. Para facilitar sua pesquisa, poderá também filtrar a lista pelos mesmos campos citados acima.
+ 
 ## Como executar a aplicação?
  
 
