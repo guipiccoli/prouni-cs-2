@@ -3,13 +3,9 @@
 
 ## O que é?
 
-Aplicação iOS, para listar cursos e faculdades disponíveis no PROUNI, a partir da entrada obrigatória da nota do usuário, e demais filtros opcionais como:
+Aplicação iOS, para listar cursos e faculdades disponíveis no PROUNI na PUCRS, o usuário poderá realizar uma pesquisa através do nome do curso que deseja visualizar.
 
- - UF
- - Cidade
- - Concorrência (Ampla ou Cotas)
- - Nome do Curso
- - Nome da Universidade
+Também poderá favoritar um curso, e visualiza-lo na lista de favoritos da aplicação.
 
 ## Como executar a aplicação?
  
