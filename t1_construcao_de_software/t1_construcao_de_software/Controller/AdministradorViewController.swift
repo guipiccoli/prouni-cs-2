@@ -81,6 +81,7 @@ extension AdministradorViewController: UITableViewDelegate, UITableViewDataSourc
         viewController?.cityText = curso.cidade_busca
         viewController?.notaCota = "\(curso.nota_integral_cotas ?? 0.0)"
         viewController?.notaAmpla = "\(curso.nota_parcial_ampla ?? 0.0)"
+        viewController?.isCreating = false
     }
     
     

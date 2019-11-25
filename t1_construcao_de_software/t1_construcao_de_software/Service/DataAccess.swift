@@ -26,7 +26,7 @@ struct DataAccess {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
         // create post request
-        let url = URL(string: "https://t2construcaodesoftwareapirela.herokuapp.com/listarCursos")!
+        let url = URL(string: "https://t2construcaodesoftwareapinrela.herokuapp.com/listarCursos")!
         var request = URLRequest(url: url)
         request.setValue(" application/json; charset=utf-8", forHTTPHeaderField:"Content-Type")
         request.httpMethod = "POST"
@@ -74,7 +74,7 @@ struct DataAccess {
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
     
-        let request = NSMutableURLRequest(url: NSURL(string: "https://t2construcaodesoftwareapirela.herokuapp.com/curso")! as URL,
+        let request = NSMutableURLRequest(url: NSURL(string: "https://t2construcaodesoftwareapinrela.herokuapp.com/curso")! as URL,
                                                 cachePolicy: .useProtocolCachePolicy,
                                             timeoutInterval: 10.0)
         request.httpMethod = "POST"
@@ -119,7 +119,7 @@ struct DataAccess {
            let jsonData = try? JSONSerialization.data(withJSONObject: json)
        
            print(json)
-           let request = NSMutableURLRequest(url: NSURL(string: "https://t2construcaodesoftwareapirela.herokuapp.com/curso")! as URL,
+           let request = NSMutableURLRequest(url: NSURL(string: "https://t2construcaodesoftwareapinrela.herokuapp.com/curso")! as URL,
                                                    cachePolicy: .useProtocolCachePolicy,
                                                timeoutInterval: 10.0)
            request.httpMethod = "DELETE"
@@ -145,7 +145,7 @@ struct DataAccess {
         
         
         // create get request
-        let url = URL(string: "https://t2construcaodesoftwareapirela.herokuapp.com/favorito")!
+        let url = URL(string: "https://t2construcaodesoftwareapinrela.herokuapp.com/favorito")!
         let request = URLRequest(url: url)
         
         //create session
@@ -189,7 +189,7 @@ struct DataAccess {
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
     
-        let request = NSMutableURLRequest(url: NSURL(string: "https://t2construcaodesoftwareapirela.herokuapp.com/favorito")! as URL,
+        let request = NSMutableURLRequest(url: NSURL(string: "https://t2construcaodesoftwareapinrela.herokuapp.com/favorito")! as URL,
                                                 cachePolicy: .useProtocolCachePolicy,
                                             timeoutInterval: 10.0)
         request.httpMethod = "POST"
